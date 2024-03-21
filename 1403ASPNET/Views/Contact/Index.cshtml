@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Contato</h1>
+</div>
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Escreva sua mensagem</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+<button onclick="EnviarFalso()" class="btn btn-primary">Enviar</button>
+
+<script>
+    function EnviarFalso() {
+        document.getElementById("exampleFormControlInput1").value = "";
+        document.getElementById("exampleFormControlTextarea1").value = "";
+    }
+</script>
+
